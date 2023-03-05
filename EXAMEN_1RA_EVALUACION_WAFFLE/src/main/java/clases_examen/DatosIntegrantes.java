@@ -35,7 +35,10 @@ public class DatosIntegrantes {
         System.out.println("Datos integrantes");
         System.out.println("Contraseña");
         System.out.println("Pelicula");
+        System.out.println("Ficha Bibliográfica");
         System.out.println("Test Covid");
+        System.out.println("Cuenta Bancaria");
+        System.out.println("Empleado");
         System.out.println("Fibonacci");
         
     }

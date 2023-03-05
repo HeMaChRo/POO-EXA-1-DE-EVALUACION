@@ -1,8 +1,11 @@
 
 package com.mycompany.examen_1ra_evaluacion_waffle;
 
+import clases_examen.CuentaBancaria;
 import clases_examen.DatosIntegrantes;
+import clases_examen.Empleado;
 import clases_examen.FIBONACCI;
+import clases_examen.FichaBibliografica;
 import clases_examen.Password;
 import clases_examen.Pelicula;
 import clases_examen.TestCovid;
@@ -36,6 +39,13 @@ public class EXAMEN_1RA_EVALUACION_WAFFLE {
         peli1.setRating(6);
         peli1.evaluarEdad();
         
+        //Ficha bibliografica
+        
+        System.out.println("\nClase Ficha Bibliográfica: \n");
+        
+        FichaBibliografica ficha1 = new FichaBibliografica("Marissa Meyer", "Supernova", "VR-YA México", "México", "3", "2019", "549");
+        ficha1.imprimirDatos();
+        
         //Test COVID & IMC
         
         TestCovid test1 = new TestCovid();
@@ -55,7 +65,26 @@ public class EXAMEN_1RA_EVALUACION_WAFFLE {
         System.out.print("\nTest de covid: ");
         test1.calcularPersonaRiesgo();
         
+        //Cuenta Bancaria
+        
+        System.out.println("Clase Cuenta Bancaria: \n");
+        
+        CuentaBancaria cuenta1 = new CuentaBancaria(225500, "Juan", 1200);
+        cuenta1.DepositarEnCuenta(500);
+        System.out.println(cuenta1.getSaldo());
+        cuenta1.RetirarDeCuenta(1600);
+        cuenta1.ImprimirDatos();
+        
+        //Clase Empleado
+        
+        System.out.println("\nClase Empleado: \n");
+        
+        Empleado empleado1 = new Empleado("Juan", "Perez", "Colegio Militar", 2013, 2900);
+        empleado1.CalcularVacaciones();
+        
         //FIBONACCI
+        
+        System.out.println("\nClase Fibonacci: \n");
         
         FIBONACCI fibo1 = new FIBONACCI();      
         fibo1.imprimirFIBONACCI();
